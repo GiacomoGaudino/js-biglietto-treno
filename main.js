@@ -44,4 +44,6 @@ if (age < 18) {
     console.log(price)
 }
 
+// risultato finale con 2 decimali
+
 console.log(price.toFixed(2))
