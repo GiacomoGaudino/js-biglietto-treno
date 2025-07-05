@@ -38,7 +38,7 @@ console.log(price)
 if (age < 18) {
     price = price - (price * 20 / 100)
     console.log(price)
-} else if (age > 65) {
+} else if (age >= 65) {
     price = price - (price * 40 / 100)
     console.log(price)
 } else {
