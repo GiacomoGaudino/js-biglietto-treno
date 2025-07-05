@@ -24,12 +24,13 @@ console.log(kilometres)
 
 // utente fornisce età passeggeri
 
-const age = prompt("inserisci età")
+const age = prompt("età del passeggero")
 console.log(age)
 
 // calcolo costo biglietto
 
 let price = kilometres * 0.21
+let text = price.toLocaleString("it-IT", { style: "currency", currency: "EUR" })
 console.log(price)
 
 // sconto under 18 e sconto over 65
