@@ -48,3 +48,6 @@ if (age < 18) {
 // risultato finale con 2 decimali
 
 console.log(price.toFixed(2))
+let valute = price.toLocaleString("it-IT", { style: "currency", currency: "EUR" })
+
+document.writeln(valute)
