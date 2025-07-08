@@ -19,12 +19,12 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio 
 
 // utente fornisce numero km
 
-const kilometres = prompt("inserisci km da percorrere")
+const kilometres = Number(prompt("inserisci km da percorrere"))
 console.log(kilometres)
 
 // utente fornisce età passeggeri
 
-const age = prompt("età del passeggero")
+const age = Number(prompt("età del passeggero"))
 console.log(age)
 
 // utente fornisce nome e cognome viaggiatore
@@ -36,17 +36,17 @@ console.log(surname)
 
 // calcolo costo biglietto
 
-let price = kilometres * 0.21
+let price = Number(kilometres * 0.21)
 let text = price.toLocaleString("it-IT", { style: "currency", currency: "EUR" })
 console.log(price)
 
 // sconto under 18, sconto over 65 e se ti chiami Fabio è gratis
 
 if (age < 18) {
-    price = price - (price * 20 / 100)
+    Number(price = price - (price * 20 / 100))
     console.log(price)
 } else if (age >= 65) {
-    price = price - (price * 40 / 100)
+    Number(price = price - (price * 40 / 100))
     console.log(price)
 } else {
     console.log(price)
