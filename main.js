@@ -27,13 +27,20 @@ console.log(kilometres)
 const age = prompt("età del passeggero")
 console.log(age)
 
+// utente fornisce nome e cognome viaggiatore
+
+const first_name = prompt("inserisci nome passeggero")
+const surname = prompt("inserisci cognome passeggero")
+console.log(first_name)
+console.log(surname)
+
 // calcolo costo biglietto
 
 let price = kilometres * 0.21
 let text = price.toLocaleString("it-IT", { style: "currency", currency: "EUR" })
 console.log(price)
 
-// sconto under 18 e sconto over 65
+// sconto under 18, sconto over 65 e se ti chiami Fabio è gratis
 
 if (age < 18) {
     price = price - (price * 20 / 100)
@@ -42,6 +49,11 @@ if (age < 18) {
     price = price - (price * 40 / 100)
     console.log(price)
 } else {
+    console.log(price)
+}
+
+if (first_name == "Fabio") {
+    price = 0
     console.log(price)
 }
 
