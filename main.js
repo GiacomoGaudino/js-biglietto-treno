@@ -52,7 +52,7 @@ if (age < 18) {
     console.log(price)
 }
 
-if (first_name == "Fabio" || first_name == "fabio") {
+if (first_name.toLowerCase() === "fabio") {
     price = 0
     console.log(price)
 }
