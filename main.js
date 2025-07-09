@@ -29,8 +29,8 @@ console.log(age)
 
 // utente fornisce nome e cognome viaggiatore
 
-const full_name = prompt("inserisci nome e cognome passeggero")
-const first_name = full_name.split(" ")[0].toLowerCase()
+const full_name = prompt("inserisci nome e cognome passeggero").toLowerCase()
+const first_name = full_name.split(" ")[0]
 
 
 // calcolo costo biglietto
