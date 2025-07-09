@@ -44,18 +44,18 @@ console.log(price)
 if (age < 18) {
     Number(price = price - (price * 20 / 100))
     console.log(price)
+    alert("biglietto minorenni")
 } else if (age >= 65) {
     Number(price = price - (price * 40 / 100))
     console.log(price)
-} else {
-    console.log(price)
-}
-
-if (first_name === "fabio") {
+    alert("biglietto over 65")
+} else if (first_name === "fabio") {
     price = 0
     console.log(price)
+    alert("COMPLIMENTI IL BIGLIETTO è GRATIS")
 } else {
     console.log(price)
+    alert("biglietto standard")
 }
 
 // risultato finale con 2 decimali
