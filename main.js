@@ -29,10 +29,9 @@ console.log(age)
 
 // utente fornisce nome e cognome viaggiatore
 
-const first_name = prompt("inserisci nome passeggero")
-const surname = prompt("inserisci cognome passeggero")
-console.log(first_name)
-console.log(surname)
+const full_name = prompt("inserisci nome e cognome passeggero")
+const first_name = full_name.split(" ")[0].toLowerCase()
+
 
 // calcolo costo biglietto
 
@@ -52,8 +51,10 @@ if (age < 18) {
     console.log(price)
 }
 
-if (first_name.toLowerCase() === "fabio") {
+if (first_name === "fabio") {
     price = 0
+    console.log(price)
+} else {
     console.log(price)
 }
 
