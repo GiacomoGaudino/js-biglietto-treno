@@ -41,18 +41,18 @@ console.log(price)
 
 // sconto under 18, sconto over 65 e se ti chiami Fabio è gratis
 
-if (age < 18) {
-    Number(price = price - (price * 20 / 100))
+if (first_name === "fabio") {
+    price = 0
     console.log(price)
-    alert("biglietto minorenni")
+    alert("COMPLIMENTI IL BIGLIETTO è GRATIS")
 } else if (age >= 65) {
     Number(price = price - (price * 40 / 100))
     console.log(price)
     alert("biglietto over 65")
-} else if (first_name === "fabio") {
-    price = 0
+} else if (age < 18) {
+    Number(price = price - (price * 20 / 100))
     console.log(price)
-    alert("COMPLIMENTI IL BIGLIETTO è GRATIS")
+    alert("biglietto minorenni")
 } else {
     console.log(price)
     alert("biglietto standard")
